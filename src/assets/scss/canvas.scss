@@ -1,0 +1,67 @@
+.splitter-layout{
+
+    .layout-pane-primary{
+        overflow: hidden !important;
+
+        div:first-child{
+            display: flex;
+            justify-content: center;
+
+            #defaultCanvas0{
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+table{
+    border-collapse:collapse;
+
+    tr{
+        &:nth-child(even){
+            background-color: #444;
+        }
+
+        &:hover{
+            background-color: #464e77;
+            cursor: pointer;
+        }
+
+        td{
+            &:first-child{
+                background-color: #222;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 944px){
+    div.floating-main{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-height: 750px){
+    div.margin-top{
+        margin-top: 0;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+    }
+
+    div.floating-main:not(.landing-region){
+        margin: 0;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+#code{
+    min-height: 245px;
+}
